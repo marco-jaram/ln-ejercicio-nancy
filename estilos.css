@@ -1,0 +1,588 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+/*  Snipets
+mediasm  @media (min-width: 768px)  ipad
+mediam   @media (min-width: 1024px) lap
+medial   @media (min-width: 1280px) Desk
+*/
+
+:root {
+    --color-primario: #658f3d;
+    --color-secundario: #b46327;
+    --color-claro1: #EDDBCD;
+    --color-claro2: #CDCDCD;
+    --color-oscuro1: #000000;
+    --color-oscuro2: #383735;
+    --colo-texto-gris: #303435;
+    --tipo-primario: 'Playfair Display', serif;
+    --tipo-secundario: 'Open Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* font-size: 62.5%; */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.mt-s {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.25rem;
+    color: grey;
+    font-family: var(--tipo-secundario);
+}
+
+li {
+    /* font-size: 1.8rem; */
+    list-style-type: none;
+    margin: 0px;
+}
+
+.contenedor {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/* Botones */
+
+.boton-cta {
+    font-weight: bold;
+    background-image: linear-gradient(to right, #458536, #94b580);
+    border-style: none;
+    padding: 13px 37px 13px 36px;
+    border-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.boton-cta a:hover {
+    color: green;
+}
+
+body {
+    margin: 0px;
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+/* @media (min-width: 1024px) {
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contenedor {
+        max-width: 1300px;
+        margin: 0 auto;
+        width: 90%;
+    }
+} */
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 122px;
+}
+
+.barra-logo-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .barra-logo-menu {
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Redes  */
+
+.redes-colores {
+    display: flex;
+}
+
+.redes-colores a {
+    margin-left: 10px;
+}
+
+.redes-colores a i {
+    font-size: 30px;
+    color: var(--color-secundario);
+}
+
+.redes-colores a i:hover {
+    color: var(--color-primario);
+}
+
+/* PRINCIPAL */
+
+.madre-img-principal {
+    max-width: 325px;
+}
+
+.recuadro-fondo-principal {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .princiapl {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .principal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: .5rem;
+        column-gap: .5rem;
+        z-index: 9;
+        position: relative;
+        margin-top: -550px;
+    }
+    .madre-img-principal {
+        max-width: 425px;
+        margin-right: 0px;
+    }
+    .recuadro-fondo-principal {
+        display: block;
+        background-color: #eddbcd;
+        height: 400px;
+        width: 100%;
+        margin-top: 150px;
+        /* max-width: 530px; */
+        /* position: absolute; */
+        /* z-index: 1; */
+    }
+}
+
+.img-principal-bacground {
+    margin: 40px 20px 0px 20px;
+    background-image: url(/img/mc7de33-7-min.jpg);
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido-img-principal {
+    height: 450px;
+}
+
+@media (min-width: 768px) {
+    .contenido-img-principal {
+        height: 550px;
+    }
+}
+
+.img-decorativa {
+    width: 147px;
+    height: 147px;
+    margin-top: -60px;
+    margin-left: -24px;
+}
+
+.msj-principal {
+    background-color: var(--color-claro1);
+    width: 100%;
+    height: 727px;
+    /* margin-top: -500px; */
+    margin-top: 35px;
+}
+
+@media (min-width: 768px) {
+    .msj-principal {
+        height: 550px;
+        background-color: transparent;
+    }
+}
+
+.msj-contenido {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titulo-principal h1 {
+    color: #ba8b2f;
+    font-family: var(--tipo-primario);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 4.5rem;
+    text-align: left;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: none;
+}
+
+.p-titulo-principal {
+    margin-top: 100px;
+    color: var(--colo-texto-gris);
+    font-family: var(--tipo-secundario);
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .p-titulo-principal {
+        margin-top: 10px;
+    }
+}
+
+.img-separador1 img {
+    margin: 40px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.msj-contenido .boton-cta {
+    display: block;
+    margin-top: 100px;
+    max-width: 180px;
+}
+
+@media (min-width: 768px) {
+    .msj-contenido .boton-cta {
+        margin-top: 0px;
+    }
+}
+
+.img-separador1 {
+    padding-top: 25px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .img-separador1 {
+        padding-top: 50px;
+    }
+}
+
+/* BENECICIOS */
+
+.beneficios {
+    background-color: #94b580;
+}
+
+.beneficios-contenido {
+    padding: 30px 5px 60px 5px;
+    background-color: #94b580;
+}
+
+.beneficios-titulo h2 {
+    color: white;
+    font-family: var(--tipo-primario);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    text-align: left;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: none;
+}
+
+.beneficios-titulo h3 {
+    color: white;
+    font-family: var(--tipo-primario);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: left;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-transform: none;
+}
+
+.beneficios-contenido ul {
+    padding-left: 10px;
+    color: white;
+    list-style-position: center;
+}
+
+@media (min-width: 768px) {
+    .beneficios-contenido ul {
+        padding-left: 40px;
+    }
+}
+
+.beneficios-contenido ul li {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+.beneficios-contenido ul li i {
+    font-size: 3rem;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-separador2 {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img-separador2 img {
+    margin-bottom: 40px;
+}
+
+/* MAIN  */
+
+/* CONTENIDO */
+
+.madre-main {
+    position: relative;
+}
+
+.madre-main h2 {
+    padding-top: 90px;
+}
+
+.recuadro-fondo-contenido {
+    background-color: #eddbcd;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    /* max-width: 530px; */
+    position: relative;
+}
+
+.main-titulo {
+    font-style: italic;
+    font-family: var(--tipo-primario);
+    padding-bottom: 40px;
+}
+
+.main-img-background {
+    margin: -40px 0px 0px 10px;
+    background-image: url(/img/namacy-sonrie-min.png);
+    object-fit: cover;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenido-ln {
+    width: 300px;
+    height: 270px;
+}
+
+.main-img-background .decora-ln {
+    margin-top: -40px;
+    margin-left: -10px;
+    width: 80px;
+}
+
+.contenido-ln img {
+    width: 100px;
+}
+
+.lista-de-contenido {
+    margin: 30px 50px 0px 0px;
+    background-color: #94b580;
+    width: 500px;
+    max-width: 100%;
+    padding: 30px 0;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .lista-de-contenido {
+        margin: 20px 50px 0px 300px;
+        width: 385px;
+    }
+}
+
+.lista-de-contenido ul {
+    margin-bottom: 50px;
+}
+
+.lista-de-contenido ul li {
+    margin-top: 1rem;
+}
+
+.lista-de-contenido ul li i {
+    font-size: 3rem;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .formulario {}
+}
+
+.formulario-background {
+    margin: 40px 47px 0px 0px;
+    background-image: url(/img/mc10de33-9-min.jpg);
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .formulario-background {
+        margin: 0px;
+    }
+}
+
+.formulario-out-put {
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40px;
+    margin-top: -50px;
+    box-shadow: 0px 10px 15px rgba(26, 34, 56, 0.507);
+}
+@media (min-width: 768px) {
+    .formulario-out-put {
+        margin: -505px 10px 0px 380px;
+    }
+}
+@media (min-width: 1024px) {
+.formulario-out-put
+{
+    margin: -505px 10px 0px 550px;
+}
+@media (min-width: 1280px) {
+    .formulario-out-put
+    {
+        margin: -505px 10px 0px 650px;
+    }
+}
+
+}
+.contenido-formulario {
+    height: 303px;
+    margin-top: 33px;
+    margin-right: 47px;
+}
+
+.contenedor-formulario {
+    padding: 30px;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    width: 350px;
+}
+
+@media (min-width: 768px) {
+    .contenido-formulario {
+        height: 445px;
+        margin-top: 110px;
+        margin-right: 47px;
+    }
+}
+
+.contenido-formulario-out-put h3 {
+    color: #ba8b2f;
+    font-family: var(--tipo-primario);
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenido-formulario-out-put p {
+    font-size: 1rem;
+}
+
+
+
+.msj-final h3 {
+    color: var(--colo-texto-gris);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.separador3 {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.aviso {
+    margin: 0px 20px;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--color-oscuro2);
+}
+
+footer img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer .redes-colores {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
